@@ -11,9 +11,9 @@ function App() {
     <BrowserRouter>
      <Header />
     <Routes>
-      <Route path='/' element={<HomePage />} />
-      <Route path='/consultar-dni' element={<DniPage />} />
-      <Route path='/consultar-ruc' element={<RucPage />} />
+      <Route path='/peru-data-api/' element={<HomePage />} />
+      <Route path='/peru-data-api/consultar-dni' element={<DniPage />} />
+      <Route path='/peru-data-api/consultar-ruc' element={<RucPage />} />
     </Routes>
   </BrowserRouter>
   );

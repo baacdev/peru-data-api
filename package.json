@@ -1,5 +1,6 @@
 {
   "name": "api-peru",
+  "homepage": "https://baacdev.github.io/peru-data-api/",
   "private": true,
   "version": "0.0.0",
   "type": "module",

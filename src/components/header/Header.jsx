@@ -21,10 +21,10 @@ function Header() {
     <header className="bg-gray-950/90 min-h-[8vh]">
       <nav className="flex items-center mx-auto justify-between lg:justify-center max-w-screen-xl text-center p-6 lg:px-8" aria-label="Global">
         <div className="flex pr-20">
-          <Link to={'/'} className="-m-1.5 p-1.5">
+          <Link to={'/peru-data-api'} className="-m-1.5 p-1.5">
             <img
               className='h-auto w-auto'
-              src='/vite.svg'
+              src='/peru-data-api/vite.svg'
               alt=''
             />
           </Link>
@@ -41,13 +41,13 @@ function Header() {
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Link
-            to={'/consultar-dni'}
+            to={'/peru-data-api/consultar-dni'}
             className="text-gray-100 text-lg font-bold font-mono bg-indigo-700 px-4 py-2 rounded-full shadow-lg shadow-black leading-6 hover:bg-indigo-800"
           >
             CONSULTAR DNI
           </Link>
           <Link
-            to={'/consultar-ruc'}
+            to={'/peru-data-api/consultar-ruc'}
             className="text-gray-100 text-lg font-bold font-mono bg-indigo-700 px-4 py-2 rounded-full shadow-lg shadow-black leading-6 hover:bg-indigo-800"
           >
             CONSULTAR RUC
@@ -59,7 +59,7 @@ function Header() {
         <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-gray-950 px-6 py-6 sm:max-w-sm">
           <div className="flex items-center justify-between">
             <Link
-              to={'/'}
+              to={'/peru-data-api'}
               className="-m-1.5 p-1.5"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -83,14 +83,14 @@ function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  to={'/consultar-dni'}
+                  to={'/peru-data-api/consultar-dni'}
                   className="-mx-3 block rounded-lg px-3 py-2 text-xl font-mono font-semibold leading-7 text-gray-300 hover:bg-gray-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Consultar DNI
                 </Link>
                 <Link
-                  to={'/consultar-ruc'}
+                  to={'/peru-data-api/consultar-ruc'}
                   className="-mx-3 block rounded-lg px-3 py-2 text-xl font-mono font-semibold leading-7 text-gray-300 hover:bg-gray-700"
                   onClick={() => setMobileMenuOpen(false)}
                 >
