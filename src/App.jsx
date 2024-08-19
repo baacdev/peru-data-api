@@ -4,6 +4,7 @@ import Header from './components/header/Header'
 import HomePage from './Pages/HomePage'
 import DniPage from './Pages/Dni/DniPage'
 import RucPage from './Pages/Ruc/RucPage'
+import NotFound from './Pages/NotFound'
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Route path='/peru-data-api/' element={<HomePage />} />
       <Route path='/peru-data-api/consultar-dni' element={<DniPage />} />
       <Route path='/peru-data-api/consultar-ruc' element={<RucPage />} />
+      <Route path='*' element={<NotFound />} />
     </Routes>
   </BrowserRouter>
   );
